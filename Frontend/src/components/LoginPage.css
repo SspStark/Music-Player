@@ -102,6 +102,15 @@
   cursor: pointer;
   margin-top: 40px;
 }
+.forgot-password {
+  color: lightcyan;
+  font-size: 15px;
+}
+.forgot-password:hover {
+  color: greenyellow;
+  cursor: pointer;
+  text-decoration: underline;
+}
 .sign-up-login {
   color: lightcyan;
   font-size: 16px;

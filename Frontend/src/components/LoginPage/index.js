@@ -15,7 +15,11 @@ const LoginPage = () => {
   const navigate = useNavigate()
 
   const signUp = () => {
-    navigate('/musichub/sign-up')
+    navigate('/sign-up')
+  }
+
+  const forgotPassword = () => {
+    alert("what a fucking idiot you are, can't even remember password")
   }
 
   const loginUser = async event => {
@@ -108,6 +112,9 @@ const LoginPage = () => {
           {isLoading ? 'logging in...' : 'Login'}
         </button>
         {showErrorMsg && <p className="error-msg">*{errorMsg}</p>}
+        <p className="forgot-password" onClick={forgotPassword}>
+          Forgot your password?
+        </p>
       </form>
       <p className="sign-up-login">
         Don't have an account? <span onClick={signUp}>Sign up</span>
